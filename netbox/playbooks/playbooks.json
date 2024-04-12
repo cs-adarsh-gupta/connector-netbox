@@ -2,16 +2,16 @@
   "type": "workflow_collections",
   "data": [
     {
-      "uuid": "c2413292-aace-4469-9333-e9e7d8c712fc",
+      "uuid": "8ea01517-616d-4719-8588-4e8b6300f902",
       "@type": "WorkflowCollection",
       "workflows": [
         {
           "@type": "Workflow",
-          "uuid": "8263201f-2984-4d4d-b64f-3204e47495e9",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "841b41a1-6d31-4fa1-9fab-8e1980ea2c0b",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "4c4a1d6c-36b6-4f3a-8ae3-df0c984e3d58",
+              "uuid": "0d1bcef6-ea10-4c8d-8606-d471fc43283c",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -28,7 +28,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "eeca7565-487f-4953-8b8a-9842815ea064",
+              "uuid": "59ecb252-8897-44d7-82bd-ca5892484407",
               "@type": "WorkflowStep",
               "name": "Get IP Address List",
               "description": null,
@@ -60,7 +60,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of IP address objects in your NetBox instance.",
+          "description": "Retrieves a list of IP address objects in your NetBox instance based on the IP address IDs, addresses, and other input parameters that you have specified.",
           "name": "Get IP Address List",
           "tag": "#NetBox",
           "recordTags": [
@@ -72,26 +72,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/4c4a1d6c-36b6-4f3a-8ae3-df0c984e3d58",
+          "triggerStep": "/api/3/workflow_steps/0d1bcef6-ea10-4c8d-8606-d471fc43283c",
           "routes": [
             {
-              "uuid": "3937ebf1-0b13-44b3-be3a-d0434840fbee",
+              "uuid": "798f6d58-b95c-459b-a0fe-6701bee385cb",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get IP Address List",
-              "sourceStep": "/api/3/workflow_steps/4c4a1d6c-36b6-4f3a-8ae3-df0c984e3d58",
-              "targetStep": "/api/3/workflow_steps/eeca7565-487f-4953-8b8a-9842815ea064"
+              "sourceStep": "/api/3/workflow_steps/0d1bcef6-ea10-4c8d-8606-d471fc43283c",
+              "targetStep": "/api/3/workflow_steps/59ecb252-8897-44d7-82bd-ca5892484407"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "94133995-90d7-422e-8430-0deef23887c7",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "447180b8-bc33-4f2e-a435-da98ce9cf012",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "52f14d6e-28a9-4382-9c24-b2f0fe688030",
+              "uuid": "80a0668d-0012-469b-8dc1-ca486a4d7996",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -108,7 +108,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "19e319a2-589a-4cc4-92c7-a0964d0e6d38",
+              "uuid": "80637d13-b065-4553-8451-aa0195a1bb0d",
               "@type": "WorkflowStep",
               "name": "Get IP Address",
               "description": null,
@@ -130,7 +130,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of IP address object from your NetBox instance based on given IP address ID.",
+          "description": "Retrieves a detailed view of IP address object from your NetBox instance based on the IP address ID that you have specified.",
           "name": "Get IP Address",
           "tag": "#NetBox",
           "recordTags": [
@@ -142,26 +142,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/52f14d6e-28a9-4382-9c24-b2f0fe688030",
+          "triggerStep": "/api/3/workflow_steps/80a0668d-0012-469b-8dc1-ca486a4d7996",
           "routes": [
             {
-              "uuid": "6116f292-ab73-405b-a71c-1f1f4f47ab28",
+              "uuid": "90374310-9067-4c9d-9a70-68b36a6eebff",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get IP Address",
-              "sourceStep": "/api/3/workflow_steps/52f14d6e-28a9-4382-9c24-b2f0fe688030",
-              "targetStep": "/api/3/workflow_steps/19e319a2-589a-4cc4-92c7-a0964d0e6d38"
+              "sourceStep": "/api/3/workflow_steps/80a0668d-0012-469b-8dc1-ca486a4d7996",
+              "targetStep": "/api/3/workflow_steps/80637d13-b065-4553-8451-aa0195a1bb0d"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "0692a41c-7cc5-4a9e-b6fe-ff336436ff2f",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "8ddd2de9-cabe-4312-9894-19713e28df2a",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "4ea75ad6-d5c9-4d3a-bb4b-07e617aa0ca5",
+              "uuid": "d50365bc-f9ea-402d-80cc-f1336d2797a4",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -178,7 +178,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "5dbc6b6e-8f4d-4b25-89ee-b8b3f33adbb8",
+              "uuid": "b66fe047-625a-4a7d-b790-6c20bc013db2",
               "@type": "WorkflowStep",
               "name": "Update IP Address",
               "description": null,
@@ -225,7 +225,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a IP address object from your NetBox instance based on given IP address ID and other parameters.",
+          "description": "Updates an IP address object from your NetBox instance based on the IP address ID and fields to be updated.",
           "name": "Update IP Address",
           "tag": "#NetBox",
           "recordTags": [
@@ -237,26 +237,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/4ea75ad6-d5c9-4d3a-bb4b-07e617aa0ca5",
+          "triggerStep": "/api/3/workflow_steps/d50365bc-f9ea-402d-80cc-f1336d2797a4",
           "routes": [
             {
-              "uuid": "fc092f46-7af6-4b4e-9249-591d566d8006",
+              "uuid": "6a4d1191-c34b-43de-83f1-a76efd48e1dd",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update IP Address",
-              "sourceStep": "/api/3/workflow_steps/4ea75ad6-d5c9-4d3a-bb4b-07e617aa0ca5",
-              "targetStep": "/api/3/workflow_steps/5dbc6b6e-8f4d-4b25-89ee-b8b3f33adbb8"
+              "sourceStep": "/api/3/workflow_steps/d50365bc-f9ea-402d-80cc-f1336d2797a4",
+              "targetStep": "/api/3/workflow_steps/b66fe047-625a-4a7d-b790-6c20bc013db2"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "9f47943d-4ef9-40a8-a636-6d71d4d0c11e",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "f8a059d5-da04-4eb8-b932-2162126b9f7d",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "49f69ed8-67af-4654-9a1e-89afc78ad18b",
+              "uuid": "b749a39a-c0d7-4df4-aaaa-1a377aa6a906",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -273,7 +273,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "f12cf4fd-74de-4e77-b8db-5f5bffe02912",
+              "uuid": "6b414b48-3f1b-41ab-8775-33173c65d53b",
               "@type": "WorkflowStep",
               "name": "Delete IP Address",
               "description": null,
@@ -295,7 +295,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete an IP address object from your NetBox instance based on given IP address ID.",
+          "description": "Deletes an IP address object from your NetBox instance based on given IP address ID that you have specified.",
           "name": "Delete IP Address",
           "tag": "#NetBox",
           "recordTags": [
@@ -307,26 +307,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/49f69ed8-67af-4654-9a1e-89afc78ad18b",
+          "triggerStep": "/api/3/workflow_steps/b749a39a-c0d7-4df4-aaaa-1a377aa6a906",
           "routes": [
             {
-              "uuid": "55bcdcbf-b676-48fd-81f7-9f95622732a7",
+              "uuid": "effe77d4-80bb-49af-a372-22e9567d0971",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete IP Address",
-              "sourceStep": "/api/3/workflow_steps/49f69ed8-67af-4654-9a1e-89afc78ad18b",
-              "targetStep": "/api/3/workflow_steps/f12cf4fd-74de-4e77-b8db-5f5bffe02912"
+              "sourceStep": "/api/3/workflow_steps/b749a39a-c0d7-4df4-aaaa-1a377aa6a906",
+              "targetStep": "/api/3/workflow_steps/6b414b48-3f1b-41ab-8775-33173c65d53b"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "2b1cd92f-ab8a-4da8-a52e-66fd35a11179",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "feca7533-0d2f-46f4-82d3-03e94b204726",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "c8250984-e998-4268-ac31-bd4876ce0f05",
+              "uuid": "14671449-e3ce-446f-9e53-f182469e15da",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -343,7 +343,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "4fb34ded-704e-43f0-9ae3-5762903fe50c",
+              "uuid": "e60f419c-03e9-4ecf-a05a-bca1f16b3201",
               "@type": "WorkflowStep",
               "name": "Get Prefix List",
               "description": null,
@@ -376,7 +376,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of IP address Prefix objects in your NetBox instance. A prefix might be represented as \"192.168.1.0/24.\" Here, \"192.168.1.0\" is the network address, and \"/24\" denotes the subnet mask ",
+          "description": "Retrieves a list of IP address prefix objects in your NetBox instance based on the IDs, prefix, and other input parameters that you have specified. A prefix might be represented as 192.168.1.0/24. Here, 192.168.1.0 is the network address, and /24 denotes the subnet mask.",
           "name": "Get Prefix List",
           "tag": "#NetBox",
           "recordTags": [
@@ -388,26 +388,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/c8250984-e998-4268-ac31-bd4876ce0f05",
+          "triggerStep": "/api/3/workflow_steps/14671449-e3ce-446f-9e53-f182469e15da",
           "routes": [
             {
-              "uuid": "118e2468-6501-4edd-9d3a-3667a6ab6844",
+              "uuid": "6092df47-4840-418a-bb6d-d0a063016770",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Prefix List",
-              "sourceStep": "/api/3/workflow_steps/c8250984-e998-4268-ac31-bd4876ce0f05",
-              "targetStep": "/api/3/workflow_steps/4fb34ded-704e-43f0-9ae3-5762903fe50c"
+              "sourceStep": "/api/3/workflow_steps/14671449-e3ce-446f-9e53-f182469e15da",
+              "targetStep": "/api/3/workflow_steps/e60f419c-03e9-4ecf-a05a-bca1f16b3201"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "5b0743f9-2079-48f3-abc2-4a2453644ee9",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "92fe3ce0-9b55-40d2-b95b-61c0a44881e4",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "f7de0985-4c16-42da-b78d-8baae6130ec3",
+              "uuid": "a3cd28d7-d0e5-48da-96de-901d54e2f895",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -424,7 +424,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "b7b779d1-6861-4d25-8d40-07929d712207",
+              "uuid": "94fdb7f4-60f7-4404-ba91-e8268b9f5271",
               "@type": "WorkflowStep",
               "name": "Get Prefix",
               "description": null,
@@ -446,7 +446,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of Prefix object from your NetBox instance based on given Prefix ID.",
+          "description": "Retrieves a detailed view of the prefix object from your NetBox instance based on the prefix ID that you have specified.",
           "name": "Get Prefix",
           "tag": "#NetBox",
           "recordTags": [
@@ -458,26 +458,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/f7de0985-4c16-42da-b78d-8baae6130ec3",
+          "triggerStep": "/api/3/workflow_steps/a3cd28d7-d0e5-48da-96de-901d54e2f895",
           "routes": [
             {
-              "uuid": "8e64ac54-68a7-4ff5-96fc-1dd3f941506a",
+              "uuid": "138fbd8e-ae18-438b-afaf-b198f7ac7947",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Prefix",
-              "sourceStep": "/api/3/workflow_steps/f7de0985-4c16-42da-b78d-8baae6130ec3",
-              "targetStep": "/api/3/workflow_steps/b7b779d1-6861-4d25-8d40-07929d712207"
+              "sourceStep": "/api/3/workflow_steps/a3cd28d7-d0e5-48da-96de-901d54e2f895",
+              "targetStep": "/api/3/workflow_steps/94fdb7f4-60f7-4404-ba91-e8268b9f5271"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "2954b286-0343-4b1d-9807-eaf728d4c485",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "dc76f6c1-d728-4f6b-b264-0179271f4ab5",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "11fcd43d-d859-4797-846f-950ad0d0cb62",
+              "uuid": "d34040fb-1b05-4c0e-a202-9dff2a54ce59",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -494,7 +494,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "2970e57b-4050-43f2-a735-a17215ca7e8b",
+              "uuid": "d2c44c6c-5af6-43d7-b879-abeb5f66bbb4",
               "@type": "WorkflowStep",
               "name": "Update Prefix",
               "description": null,
@@ -541,7 +541,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a Prefix object from your NetBox instance based on given Prefix ID and other parameters.",
+          "description": "Updates a prefix object from your NetBox instance based on the prefix ID and fields to be updated.",
           "name": "Update Prefix",
           "tag": "#NetBox",
           "recordTags": [
@@ -553,26 +553,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/11fcd43d-d859-4797-846f-950ad0d0cb62",
+          "triggerStep": "/api/3/workflow_steps/d34040fb-1b05-4c0e-a202-9dff2a54ce59",
           "routes": [
             {
-              "uuid": "3fbc0470-405a-4d72-9b94-a690b8d2d621",
+              "uuid": "87fa00aa-e8f5-4f7d-b151-eb333d22e1d2",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update Prefix",
-              "sourceStep": "/api/3/workflow_steps/11fcd43d-d859-4797-846f-950ad0d0cb62",
-              "targetStep": "/api/3/workflow_steps/2970e57b-4050-43f2-a735-a17215ca7e8b"
+              "sourceStep": "/api/3/workflow_steps/d34040fb-1b05-4c0e-a202-9dff2a54ce59",
+              "targetStep": "/api/3/workflow_steps/d2c44c6c-5af6-43d7-b879-abeb5f66bbb4"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "47e77fc8-37d0-4423-a405-8b5e0c42e78c",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "f0af6817-51f3-49dc-884c-ae8bc75fd00e",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "17c1ef1f-66d3-4351-9c6e-3e97c896683c",
+              "uuid": "4b60ade2-6e64-40a2-ba29-1716a4463775",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -589,7 +589,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "b6d2933e-468a-4b97-9e31-3268a9cc451b",
+              "uuid": "35dd0dcc-0f6f-49ac-a3c3-7e7e628757f1",
               "@type": "WorkflowStep",
               "name": "Delete Prefix",
               "description": null,
@@ -611,7 +611,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete a Prefix object from your NetBox instance based on given Prefix ID.",
+          "description": "Deletes a prefix object from your NetBox instance based on the prefix ID that you have specified.",
           "name": "Delete Prefix",
           "tag": "#NetBox",
           "recordTags": [
@@ -623,26 +623,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/17c1ef1f-66d3-4351-9c6e-3e97c896683c",
+          "triggerStep": "/api/3/workflow_steps/4b60ade2-6e64-40a2-ba29-1716a4463775",
           "routes": [
             {
-              "uuid": "45849fcd-0f84-4a25-a572-876185c83e18",
+              "uuid": "67470b47-4fcf-457b-8381-a511bf100256",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete Prefix",
-              "sourceStep": "/api/3/workflow_steps/17c1ef1f-66d3-4351-9c6e-3e97c896683c",
-              "targetStep": "/api/3/workflow_steps/b6d2933e-468a-4b97-9e31-3268a9cc451b"
+              "sourceStep": "/api/3/workflow_steps/4b60ade2-6e64-40a2-ba29-1716a4463775",
+              "targetStep": "/api/3/workflow_steps/35dd0dcc-0f6f-49ac-a3c3-7e7e628757f1"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "31ef3b15-e740-4486-b7f5-3c1b237dbf90",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "fa7ab2c8-c856-4bbe-81e8-1733ad6b333a",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "7b460187-d90b-45fe-82c3-d59e456ee565",
+              "uuid": "988ecc54-045c-4f72-a3a0-a1d6049a9b3f",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -659,7 +659,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "de0a8468-79e1-4db9-b433-c28c95eef91d",
+              "uuid": "f804d81c-26a9-420e-ba20-b2994ee59629",
               "@type": "WorkflowStep",
               "name": "Get Virtual Machines List",
               "description": null,
@@ -691,7 +691,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of all Virtual Machines associated with your NetBox instance.",
+          "description": "Retrieves a list of all virtual machines associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified.",
           "name": "Get Virtual Machines List",
           "tag": "#NetBox",
           "recordTags": [
@@ -703,26 +703,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/7b460187-d90b-45fe-82c3-d59e456ee565",
+          "triggerStep": "/api/3/workflow_steps/988ecc54-045c-4f72-a3a0-a1d6049a9b3f",
           "routes": [
             {
-              "uuid": "859ec403-7d47-4883-a639-7a2febfd93f8",
+              "uuid": "3e5718fd-8e52-4a1b-9223-fb3078b0f0ad",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Virtual Machines List",
-              "sourceStep": "/api/3/workflow_steps/7b460187-d90b-45fe-82c3-d59e456ee565",
-              "targetStep": "/api/3/workflow_steps/de0a8468-79e1-4db9-b433-c28c95eef91d"
+              "sourceStep": "/api/3/workflow_steps/988ecc54-045c-4f72-a3a0-a1d6049a9b3f",
+              "targetStep": "/api/3/workflow_steps/f804d81c-26a9-420e-ba20-b2994ee59629"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "8f5c6d37-7d06-4f53-9c9a-12cd9157cbd4",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "af640b93-6350-4109-a8ac-ea101101464f",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "ad318982-c296-4601-91f7-909d15e392a1",
+              "uuid": "eedf1d2f-9a48-4288-a865-94c9d6ffd400",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -739,7 +739,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "aa257770-4b07-437e-9aff-01f5c4d23e87",
+              "uuid": "afb8594a-18e7-415c-aebe-3e8be0afd81e",
               "@type": "WorkflowStep",
               "name": "Get Virtual Machine",
               "description": null,
@@ -761,7 +761,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of Virtual Machine from your NetBox instance based on given VM ID.",
+          "description": "Retrieves a detailed view of the virtual machine from your NetBox instance based on the VM ID that you have specified.",
           "name": "Get Virtual Machine",
           "tag": "#NetBox",
           "recordTags": [
@@ -773,26 +773,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/ad318982-c296-4601-91f7-909d15e392a1",
+          "triggerStep": "/api/3/workflow_steps/eedf1d2f-9a48-4288-a865-94c9d6ffd400",
           "routes": [
             {
-              "uuid": "e0da0c9a-d845-4d4c-8690-204552b3b806",
+              "uuid": "764242a8-51ad-4b0e-8ab2-2d6db2068495",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Virtual Machine",
-              "sourceStep": "/api/3/workflow_steps/ad318982-c296-4601-91f7-909d15e392a1",
-              "targetStep": "/api/3/workflow_steps/aa257770-4b07-437e-9aff-01f5c4d23e87"
+              "sourceStep": "/api/3/workflow_steps/eedf1d2f-9a48-4288-a865-94c9d6ffd400",
+              "targetStep": "/api/3/workflow_steps/afb8594a-18e7-415c-aebe-3e8be0afd81e"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "c80ee649-c32d-4919-91bf-5a5f98674f1a",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "1044b131-8a3c-4c33-9f4b-5a8a58ca7dfb",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "17d3f330-3e03-4015-a261-612df4a3c890",
+              "uuid": "049f0f38-42d2-4061-a05a-671036bce248",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -809,7 +809,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "e8e855be-f87a-424e-9786-213937cffd57",
+              "uuid": "71ee0afe-fab1-4b53-a6e8-c29b6911497f",
               "@type": "WorkflowStep",
               "name": "Update Virtual Machine",
               "description": null,
@@ -861,7 +861,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a VM object from your NetBox instance based on given VM ID and other parameters.",
+          "description": "Updates a VM object from your NetBox instance based on given VM ID and fields to be updated.",
           "name": "Update Virtual Machine",
           "tag": "#NetBox",
           "recordTags": [
@@ -873,26 +873,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/17d3f330-3e03-4015-a261-612df4a3c890",
+          "triggerStep": "/api/3/workflow_steps/049f0f38-42d2-4061-a05a-671036bce248",
           "routes": [
             {
-              "uuid": "821277be-ca17-4501-936a-2b6058adf8d3",
+              "uuid": "2613e14e-153f-4dff-bce1-bdc0166c9ff4",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update Virtual Machine",
-              "sourceStep": "/api/3/workflow_steps/17d3f330-3e03-4015-a261-612df4a3c890",
-              "targetStep": "/api/3/workflow_steps/e8e855be-f87a-424e-9786-213937cffd57"
+              "sourceStep": "/api/3/workflow_steps/049f0f38-42d2-4061-a05a-671036bce248",
+              "targetStep": "/api/3/workflow_steps/71ee0afe-fab1-4b53-a6e8-c29b6911497f"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "fc420b72-46c7-40c4-b9d8-0248ced29587",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "a0697d74-6597-46ee-999f-04083a2cb294",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "e189cd2d-c75a-4e6d-83e8-bd1d9747c14d",
+              "uuid": "f01602cc-b818-46c2-b87d-90e3705554f7",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -909,7 +909,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "c37ef00f-7fb0-4075-9e30-07530a9d112e",
+              "uuid": "a6a4c9ae-094a-466c-97b5-b58dcfad3747",
               "@type": "WorkflowStep",
               "name": "Delete Virtual Machine",
               "description": null,
@@ -931,7 +931,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete a VM object from your NetBox instance based on given VM ID.",
+          "description": "Deletes a VM object from your NetBox instance based on the VM ID that you have specified.",
           "name": "Delete Virtual Machine",
           "tag": "#NetBox",
           "recordTags": [
@@ -943,26 +943,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/e189cd2d-c75a-4e6d-83e8-bd1d9747c14d",
+          "triggerStep": "/api/3/workflow_steps/f01602cc-b818-46c2-b87d-90e3705554f7",
           "routes": [
             {
-              "uuid": "669b37bf-ac97-4be4-abf6-7e7ef7900732",
+              "uuid": "db40c8be-a4f7-4318-8a0c-506d2652677b",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete Virtual Machine",
-              "sourceStep": "/api/3/workflow_steps/e189cd2d-c75a-4e6d-83e8-bd1d9747c14d",
-              "targetStep": "/api/3/workflow_steps/c37ef00f-7fb0-4075-9e30-07530a9d112e"
+              "sourceStep": "/api/3/workflow_steps/f01602cc-b818-46c2-b87d-90e3705554f7",
+              "targetStep": "/api/3/workflow_steps/a6a4c9ae-094a-466c-97b5-b58dcfad3747"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "33fbcacd-6815-4f6c-b9e5-c1d9714dce14",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "855244a0-a2c8-4788-af17-8a042bf11f0e",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "8c8f1779-cf8b-4129-b480-645126c5e980",
+              "uuid": "f94aa6a4-8b31-46e6-a795-ea90d0c3b62e",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -979,7 +979,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "5b310b7a-cb65-45f0-b540-2e6a359f7e59",
+              "uuid": "89e94ba0-f626-4e33-a9a3-e0e09a6bdbd9",
               "@type": "WorkflowStep",
               "name": "Get Rack List",
               "description": null,
@@ -1012,7 +1012,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of all Racks associated with your NetBox instance. A Rack refers to a physical or virtual representation of a rack-mounted equipment",
+          "description": "Retrieves a list of all racks associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified. A Rack refers to a physical or virtual representation of a rack-mounted equipment.",
           "name": "Get Rack List",
           "tag": "#NetBox",
           "recordTags": [
@@ -1024,26 +1024,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/8c8f1779-cf8b-4129-b480-645126c5e980",
+          "triggerStep": "/api/3/workflow_steps/f94aa6a4-8b31-46e6-a795-ea90d0c3b62e",
           "routes": [
             {
-              "uuid": "d3af899f-bdd6-47e9-999f-6ffb1ace81d3",
+              "uuid": "2a4d8b7b-2124-4b59-b0c6-98e6e811adb0",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Rack List",
-              "sourceStep": "/api/3/workflow_steps/8c8f1779-cf8b-4129-b480-645126c5e980",
-              "targetStep": "/api/3/workflow_steps/5b310b7a-cb65-45f0-b540-2e6a359f7e59"
+              "sourceStep": "/api/3/workflow_steps/f94aa6a4-8b31-46e6-a795-ea90d0c3b62e",
+              "targetStep": "/api/3/workflow_steps/89e94ba0-f626-4e33-a9a3-e0e09a6bdbd9"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "fc7b5850-01d8-4d3c-93dd-d2d79a005baf",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "70820797-774d-41d9-b84b-636b055462e8",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "235b7318-9a98-4497-a430-76525f64a321",
+              "uuid": "1c25aed0-d030-44c8-919d-1657de85a0fc",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1060,7 +1060,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "e828cb58-aa6d-46ea-8d0e-a3cf53881a97",
+              "uuid": "24109f42-4250-4ea1-86b1-cef6501cdb0d",
               "@type": "WorkflowStep",
               "name": "Get Rack",
               "description": null,
@@ -1082,7 +1082,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of Rack object from your NetBox instance based on given Rack ID.",
+          "description": "Retrieves a detailed view of a rack object from your NetBox instance based on the rack ID that you have specified.",
           "name": "Get Rack",
           "tag": "#NetBox",
           "recordTags": [
@@ -1094,26 +1094,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/235b7318-9a98-4497-a430-76525f64a321",
+          "triggerStep": "/api/3/workflow_steps/1c25aed0-d030-44c8-919d-1657de85a0fc",
           "routes": [
             {
-              "uuid": "f853185b-9866-4236-8397-5d02dd4bed28",
+              "uuid": "dcc893d0-5d14-4cd4-90d9-27600684d536",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Rack",
-              "sourceStep": "/api/3/workflow_steps/235b7318-9a98-4497-a430-76525f64a321",
-              "targetStep": "/api/3/workflow_steps/e828cb58-aa6d-46ea-8d0e-a3cf53881a97"
+              "sourceStep": "/api/3/workflow_steps/1c25aed0-d030-44c8-919d-1657de85a0fc",
+              "targetStep": "/api/3/workflow_steps/24109f42-4250-4ea1-86b1-cef6501cdb0d"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "b73e09fc-f79e-42c3-ad12-8e56481a5f09",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "1d5c8d19-34e2-42e6-b2b5-10d42ec62388",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "81bb1d58-3959-4d34-a69c-c87d73b6961b",
+              "uuid": "a3e3cdc2-be39-4fbb-ae05-80cb1dba420d",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1130,7 +1130,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "27d76caa-4347-469b-9075-e3a5a7cba281",
+              "uuid": "a4102cba-2623-494d-a299-256dd85f4c71",
               "@type": "WorkflowStep",
               "name": "Update Rack",
               "description": null,
@@ -1189,7 +1189,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a Rack object from your NetBox instance based on given Rack ID and other parameters.",
+          "description": "Updates a rack object from your NetBox instance based on the rack ID and fields to be updated.",
           "name": "Update Rack",
           "tag": "#NetBox",
           "recordTags": [
@@ -1201,26 +1201,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/81bb1d58-3959-4d34-a69c-c87d73b6961b",
+          "triggerStep": "/api/3/workflow_steps/a3e3cdc2-be39-4fbb-ae05-80cb1dba420d",
           "routes": [
             {
-              "uuid": "99152a0e-3865-407a-b824-b8f1f32f8c82",
+              "uuid": "54a4b439-d83b-45d9-9162-00f65b88de9d",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update Rack",
-              "sourceStep": "/api/3/workflow_steps/81bb1d58-3959-4d34-a69c-c87d73b6961b",
-              "targetStep": "/api/3/workflow_steps/27d76caa-4347-469b-9075-e3a5a7cba281"
+              "sourceStep": "/api/3/workflow_steps/a3e3cdc2-be39-4fbb-ae05-80cb1dba420d",
+              "targetStep": "/api/3/workflow_steps/a4102cba-2623-494d-a299-256dd85f4c71"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "ec970e63-5198-48be-88b7-b9b9fbaffc23",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "d0793c4e-e773-4a35-98a9-99a77e9b3759",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "e19780ec-0f2d-48a2-83c2-a5df39f1b5c5",
+              "uuid": "2a73b61f-31f3-493e-8e80-5edd10d539b9",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1237,7 +1237,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "7a5ff1ea-754a-4ef3-b4f0-de651433b1ad",
+              "uuid": "f6faf933-ac4a-40e0-868e-4b2f8b59da07",
               "@type": "WorkflowStep",
               "name": "Delete Rack",
               "description": null,
@@ -1259,7 +1259,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete a Rack object from your NetBox instance based on given Rack ID.",
+          "description": "Deletes a rack object from your NetBox instance based on the rack ID that you have specified.",
           "name": "Delete Rack",
           "tag": "#NetBox",
           "recordTags": [
@@ -1271,26 +1271,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/e19780ec-0f2d-48a2-83c2-a5df39f1b5c5",
+          "triggerStep": "/api/3/workflow_steps/2a73b61f-31f3-493e-8e80-5edd10d539b9",
           "routes": [
             {
-              "uuid": "97d8a14b-5c13-4107-af8e-8c44b1fd3466",
+              "uuid": "0cca0d98-a06c-4948-a665-d7b77e483fe7",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete Rack",
-              "sourceStep": "/api/3/workflow_steps/e19780ec-0f2d-48a2-83c2-a5df39f1b5c5",
-              "targetStep": "/api/3/workflow_steps/7a5ff1ea-754a-4ef3-b4f0-de651433b1ad"
+              "sourceStep": "/api/3/workflow_steps/2a73b61f-31f3-493e-8e80-5edd10d539b9",
+              "targetStep": "/api/3/workflow_steps/f6faf933-ac4a-40e0-868e-4b2f8b59da07"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "8095d787-0060-45a1-a904-1f3a8839fae3",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "05cb18f0-0fe3-45de-b6b6-0dd2b19f91fd",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "5d22f965-e09b-474b-b4c8-718eb61f1e64",
+              "uuid": "145a0b45-e2c0-4430-98f0-59562d47c28f",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1307,7 +1307,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "cc54b015-5b48-470d-a01d-26979284f7b3",
+              "uuid": "3c2f9ce1-1998-41ae-8489-3344eb2ce622",
               "@type": "WorkflowStep",
               "name": "Get Devices List",
               "description": null,
@@ -1343,7 +1343,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of all Devices associated with your NetBox instance. A Device refers to the various pieces of equipment or hardware that make up a network or data center infrastructure.",
+          "description": "Retrieves a list of all Devices associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified. A Device refers to the various pieces of equipment or hardware that make up a network or data center infrastructure.",
           "name": "Get Devices List",
           "tag": "#NetBox",
           "recordTags": [
@@ -1355,26 +1355,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/5d22f965-e09b-474b-b4c8-718eb61f1e64",
+          "triggerStep": "/api/3/workflow_steps/145a0b45-e2c0-4430-98f0-59562d47c28f",
           "routes": [
             {
-              "uuid": "4541e2bf-e538-4531-96f7-40eb4a5758bc",
+              "uuid": "3382e8a7-656a-4417-82f5-4c8d3de46b7f",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Devices List",
-              "sourceStep": "/api/3/workflow_steps/5d22f965-e09b-474b-b4c8-718eb61f1e64",
-              "targetStep": "/api/3/workflow_steps/cc54b015-5b48-470d-a01d-26979284f7b3"
+              "sourceStep": "/api/3/workflow_steps/145a0b45-e2c0-4430-98f0-59562d47c28f",
+              "targetStep": "/api/3/workflow_steps/3c2f9ce1-1998-41ae-8489-3344eb2ce622"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "333ea4e3-de0a-4337-8d6c-9b22cd27d733",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "d3cda603-e59e-4d10-8f42-959bded3b4e1",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "f2b4bc66-1013-4917-8f34-682465f7efd5",
+              "uuid": "480da8cf-21f3-4b21-a380-088d54d01965",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1391,7 +1391,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "465bc060-ccba-48ee-9d47-22b5c915f165",
+              "uuid": "3f32626a-0d09-44ed-80e8-59572152fa3b",
               "@type": "WorkflowStep",
               "name": "Get Device",
               "description": null,
@@ -1413,7 +1413,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of Device object from your NetBox instance based on given Device ID.",
+          "description": "Retrieves a detail view of device object from your NetBox instance based on the device ID that you have specified.",
           "name": "Get Device",
           "tag": "#NetBox",
           "recordTags": [
@@ -1425,26 +1425,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/f2b4bc66-1013-4917-8f34-682465f7efd5",
+          "triggerStep": "/api/3/workflow_steps/480da8cf-21f3-4b21-a380-088d54d01965",
           "routes": [
             {
-              "uuid": "4fc089f8-7a65-4a92-90f8-7f7b04208e0d",
+              "uuid": "ae9bcef0-6f2d-4cb8-a52f-2cd7fbfd58ad",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Device",
-              "sourceStep": "/api/3/workflow_steps/f2b4bc66-1013-4917-8f34-682465f7efd5",
-              "targetStep": "/api/3/workflow_steps/465bc060-ccba-48ee-9d47-22b5c915f165"
+              "sourceStep": "/api/3/workflow_steps/480da8cf-21f3-4b21-a380-088d54d01965",
+              "targetStep": "/api/3/workflow_steps/3f32626a-0d09-44ed-80e8-59572152fa3b"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "6788d34a-1adb-4437-a264-b15db8ab84aa",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "9edf3248-e205-4723-a127-0ac85ecec4a4",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "ed4c9853-f96a-45f8-9fa0-e9dcc2d9b305",
+              "uuid": "d18f72de-5a05-40d3-9c9e-5e4733c26c3b",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1461,7 +1461,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "7eb43ad2-ff86-4ed4-b3e2-3fdd28ccc626",
+              "uuid": "2d545ea1-eda5-4a6f-853b-f5425ff56e8b",
               "@type": "WorkflowStep",
               "name": "Update Device",
               "description": null,
@@ -1498,7 +1498,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a Device object from your NetBox instance based on given Device ID and other parameters.",
+          "description": "Updates a device object from your NetBox instance based on given device ID and fields to be updated.",
           "name": "Update Device",
           "tag": "#NetBox",
           "recordTags": [
@@ -1510,26 +1510,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/ed4c9853-f96a-45f8-9fa0-e9dcc2d9b305",
+          "triggerStep": "/api/3/workflow_steps/d18f72de-5a05-40d3-9c9e-5e4733c26c3b",
           "routes": [
             {
-              "uuid": "c5a05e9e-200c-4750-a519-e3473164f790",
+              "uuid": "b7586287-981c-41b2-bbd9-138dccd1946a",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update Device",
-              "sourceStep": "/api/3/workflow_steps/ed4c9853-f96a-45f8-9fa0-e9dcc2d9b305",
-              "targetStep": "/api/3/workflow_steps/7eb43ad2-ff86-4ed4-b3e2-3fdd28ccc626"
+              "sourceStep": "/api/3/workflow_steps/d18f72de-5a05-40d3-9c9e-5e4733c26c3b",
+              "targetStep": "/api/3/workflow_steps/2d545ea1-eda5-4a6f-853b-f5425ff56e8b"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "7efdda03-9139-4176-9f2c-295b3bf08f71",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "a252f344-afe9-42af-9579-7f7ea5e5d6ae",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "79a20853-00e1-49ed-a1d1-739892497a51",
+              "uuid": "704b0f6b-8813-4b22-a57e-874002a674de",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1546,7 +1546,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "fa1b9db2-5c5b-477b-bc9c-264645c7db2c",
+              "uuid": "0328483e-4ab9-43f9-ba63-3a57144bd7b7",
               "@type": "WorkflowStep",
               "name": "Delete Device",
               "description": null,
@@ -1568,7 +1568,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete a Device object from your NetBox instance based on given Device ID.",
+          "description": "Deletes a device object from your NetBox instance based on given device ID that you have specified.",
           "name": "Delete Device",
           "tag": "#NetBox",
           "recordTags": [
@@ -1580,26 +1580,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/79a20853-00e1-49ed-a1d1-739892497a51",
+          "triggerStep": "/api/3/workflow_steps/704b0f6b-8813-4b22-a57e-874002a674de",
           "routes": [
             {
-              "uuid": "ec176e9e-c76a-42e8-9f67-37288c7a5721",
+              "uuid": "d186d507-c1ca-400e-803e-8786cbf824a9",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete Device",
-              "sourceStep": "/api/3/workflow_steps/79a20853-00e1-49ed-a1d1-739892497a51",
-              "targetStep": "/api/3/workflow_steps/fa1b9db2-5c5b-477b-bc9c-264645c7db2c"
+              "sourceStep": "/api/3/workflow_steps/704b0f6b-8813-4b22-a57e-874002a674de",
+              "targetStep": "/api/3/workflow_steps/0328483e-4ab9-43f9-ba63-3a57144bd7b7"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "46daf298-b347-4661-97ce-a0beb35c6f6e",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "8e9d339a-9b87-41a9-9bfe-32d1f0c4e4f6",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "054b31af-42f0-43fb-9c53-3aac91872650",
+              "uuid": "bed6a71e-b676-4acf-a34f-777a0e79d935",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1616,7 +1616,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "d991b9cd-bbf7-453b-8cb2-fc374b83211f",
+              "uuid": "4591b591-09c2-4047-b888-89b6071ed6c9",
               "@type": "WorkflowStep",
               "name": "Get Cables List",
               "description": null,
@@ -1646,7 +1646,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Get a list of all Cables associated with your NetBox instance. Cables represent the links between different devices or interfaces within a network infrastructure and are used to denote how devices are interconnected.",
+          "description": "Retrieves a list of all cables associated with your NetBox instance IDs, names, and other input parameters that you have specified. Cables represent the links between different devices or interfaces within a network infrastructure and are used to denote how devices are interconnected.",
           "name": "Get Cables List",
           "tag": "#NetBox",
           "recordTags": [
@@ -1658,26 +1658,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/054b31af-42f0-43fb-9c53-3aac91872650",
+          "triggerStep": "/api/3/workflow_steps/bed6a71e-b676-4acf-a34f-777a0e79d935",
           "routes": [
             {
-              "uuid": "b699d227-f4fe-4736-8d25-3732cb86cd76",
+              "uuid": "51ef58f4-5820-4ea6-972f-6bf32daf87da",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Cables List",
-              "sourceStep": "/api/3/workflow_steps/054b31af-42f0-43fb-9c53-3aac91872650",
-              "targetStep": "/api/3/workflow_steps/d991b9cd-bbf7-453b-8cb2-fc374b83211f"
+              "sourceStep": "/api/3/workflow_steps/bed6a71e-b676-4acf-a34f-777a0e79d935",
+              "targetStep": "/api/3/workflow_steps/4591b591-09c2-4047-b888-89b6071ed6c9"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "1af35ff8-fddb-4163-b3aa-65ed1beead87",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "bc4b9c0a-3c1f-4b19-87a1-cd45e79e1775",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "8ca1465c-1ee9-48ab-9fb2-e8f70a9bf9f7",
+              "uuid": "9a15cc51-a4d1-4933-acbb-ccb745386d68",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1694,7 +1694,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "0f145ee8-1693-481d-b480-7c77a1979207",
+              "uuid": "40ec153b-568e-4887-916c-935913f6d9b8",
               "@type": "WorkflowStep",
               "name": "Get Cable",
               "description": null,
@@ -1716,7 +1716,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Retrieve a detail view of Cable object from your NetBox instance based on given Cable ID.",
+          "description": "Retrieves a detail view of cable object from your NetBox instance based on given cable ID that you have specified.",
           "name": "Get Cable",
           "tag": "#NetBox",
           "recordTags": [
@@ -1728,26 +1728,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/8ca1465c-1ee9-48ab-9fb2-e8f70a9bf9f7",
+          "triggerStep": "/api/3/workflow_steps/9a15cc51-a4d1-4933-acbb-ccb745386d68",
           "routes": [
             {
-              "uuid": "f05c39c1-f060-4309-8ff9-3ddbed405f39",
+              "uuid": "1bff2452-b31d-458f-8e19-bf49b93d6465",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Get Cable",
-              "sourceStep": "/api/3/workflow_steps/8ca1465c-1ee9-48ab-9fb2-e8f70a9bf9f7",
-              "targetStep": "/api/3/workflow_steps/0f145ee8-1693-481d-b480-7c77a1979207"
+              "sourceStep": "/api/3/workflow_steps/9a15cc51-a4d1-4933-acbb-ccb745386d68",
+              "targetStep": "/api/3/workflow_steps/40ec153b-568e-4887-916c-935913f6d9b8"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "f1b92adf-f57a-4d88-b869-7d86c35bce3d",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "e0c83428-af1b-4bec-a013-f0251b93240f",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "6885c3b3-ff21-4039-be34-646962d6d5f5",
+              "uuid": "1e81b8ee-40af-43a5-8fc2-b7ecb3c86f8e",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1764,7 +1764,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "6c1f3bfe-7546-40c1-8a29-03e892cb77d2",
+              "uuid": "4f73b7c5-f3e0-4aef-9138-cdb9658c05bc",
               "@type": "WorkflowStep",
               "name": "Update Cable",
               "description": null,
@@ -1821,7 +1821,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Update a Cable object from your NetBox instance based on given Cable ID and other parameters.",
+          "description": "Updates a cable object from your NetBox instance based on given cable ID and fields to be updated.",
           "name": "Update Cable",
           "tag": "#NetBox",
           "recordTags": [
@@ -1833,26 +1833,26 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/6885c3b3-ff21-4039-be34-646962d6d5f5",
+          "triggerStep": "/api/3/workflow_steps/1e81b8ee-40af-43a5-8fc2-b7ecb3c86f8e",
           "routes": [
             {
-              "uuid": "0c0c8c40-ff97-4e3d-8681-fbe72e2117ae",
+              "uuid": "4df5e808-3ed1-4544-9384-d2525bbab328",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Update Cable",
-              "sourceStep": "/api/3/workflow_steps/6885c3b3-ff21-4039-be34-646962d6d5f5",
-              "targetStep": "/api/3/workflow_steps/6c1f3bfe-7546-40c1-8a29-03e892cb77d2"
+              "sourceStep": "/api/3/workflow_steps/1e81b8ee-40af-43a5-8fc2-b7ecb3c86f8e",
+              "targetStep": "/api/3/workflow_steps/4f73b7c5-f3e0-4aef-9138-cdb9658c05bc"
             }
           ]
         },
         {
           "@type": "Workflow",
-          "uuid": "9f396201-e9d5-47be-a882-a7fdced4d8ab",
-          "collection": "/api/3/workflow_collections/c2413292-aace-4469-9333-e9e7d8c712fc",
+          "uuid": "97fc186f-697e-409a-aead-a661118789bf",
+          "collection": "/api/3/workflow_collections/8ea01517-616d-4719-8588-4e8b6300f902",
           "steps": [
             {
-              "uuid": "d5398aa4-3eda-48ab-a757-5bfad787c192",
+              "uuid": "7fe403ce-5e64-4ddb-b70b-a13b1e373a8a",
               "@type": "WorkflowStep",
               "name": "Start",
               "description": null,
@@ -1869,7 +1869,7 @@
               "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
             },
             {
-              "uuid": "148bc26f-1da6-4d86-9ff3-ac41f376cf0e",
+              "uuid": "de0cefb1-6771-46e3-beaa-cc9032734f9c",
               "@type": "WorkflowStep",
               "name": "Delete Cable",
               "description": null,
@@ -1891,7 +1891,7 @@
             }
           ],
           "triggerLimit": null,
-          "description": "Delete a Cable object from your NetBox instance based on given Cable ID.",
+          "description": "Deletes a cable object from your NetBox instance based on given cable ID that you have specified.",
           "name": "Delete Cable",
           "tag": "#NetBox",
           "recordTags": [
@@ -1903,16 +1903,16 @@
           "singleRecordExecution": false,
           "parameters": [],
           "synchronous": false,
-          "triggerStep": "/api/3/workflow_steps/d5398aa4-3eda-48ab-a757-5bfad787c192",
+          "triggerStep": "/api/3/workflow_steps/7fe403ce-5e64-4ddb-b70b-a13b1e373a8a",
           "routes": [
             {
-              "uuid": "bf1c680d-7a2d-4da5-87ea-696fd110c8ea",
+              "uuid": "f2b13179-1a42-49f1-9aba-50e7b19d8c8d",
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
               "name": "Start-> Delete Cable",
-              "sourceStep": "/api/3/workflow_steps/d5398aa4-3eda-48ab-a757-5bfad787c192",
-              "targetStep": "/api/3/workflow_steps/148bc26f-1da6-4d86-9ff3-ac41f376cf0e"
+              "sourceStep": "/api/3/workflow_steps/7fe403ce-5e64-4ddb-b70b-a13b1e373a8a",
+              "targetStep": "/api/3/workflow_steps/de0cefb1-6771-46e3-beaa-cc9032734f9c"
             }
           ]
         }
