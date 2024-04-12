@@ -9,7 +9,7 @@
   "category": "Asset Management",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
-  "help_online": "",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.0.0/netbox/826/netbox-v1-0-0",
   "configuration": {
     "fields": [
       {
@@ -50,7 +50,7 @@
     {
       "operation": "get_ip_address_list",
       "title": "Get IP Address List",
-      "description": "Get a list of IP address objects in your NetBox instance.",
+      "description": "Retrieves a list of IP address objects in your NetBox instance based on the IP address IDs, addresses, and other input parameters that you have specified.",
       "category": "investigation",
       "annotation": "get_ip_address_list",
       "enabled": true,
@@ -140,8 +140,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify IP address object IDs, as comma-separated values, to retrieve from your NetBox instance.",
+          "description": "Specify IP address object IDs, as comma-separated values, to retrieve from your NetBox instance."
         },
         {
           "title": "Address",
@@ -150,8 +150,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Addresses value whose IP Address object you want to fetch.",
-          "description": "Specify comma separated values of Addresses value whose IP Address object you want to fetch."
+          "tooltip": "Specify the IP addresses, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance.",
+          "description": "Specify the IP addresses, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance."
         },
         {
           "title": "Roles",
@@ -160,8 +160,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Role whose IP Address you want to fetch.",
-          "description": "Specify comma separated values of Role whose IP Address you want to fetch."
+          "tooltip": "Specify the roles, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance.",
+          "description": "Specify the roles, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -170,8 +170,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags names whose IP Address you want to fetch.",
-          "description": "Specify comma separated values of Tags names whose IP Address you want to fetch."
+          "tooltip": "Specify the tags, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance.",
+          "description": "Specify the tags, as comma-separated values, whose associated IP address objects you want to retrieve from your NetBox instance."
         },
         {
           "title": "Search",
@@ -180,8 +180,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results.",
-          "description": "Specify the search query with which you want to filter the results."
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Address Family",
@@ -194,8 +194,8 @@
             "IPv4",
             "IPv6"
           ],
-          "tooltip": "Specify the family number with which you want to filter the results.",
-          "description": "Specify the family number with which you want to filter the results."
+          "tooltip": "Specify the address family identified, in accordance with RFC 2453, with which you want to filter the results.",
+          "description": "Specify the address family identified, in accordance with RFC 2453, with which you want to filter the results."
         },
         {
           "title": "Status",
@@ -204,8 +204,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the IP address object to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the IP address object to retrieve from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -214,8 +214,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -224,8 +224,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -252,7 +252,7 @@
     {
       "operation": "get_ip_address",
       "title": "Get IP Address",
-      "description": "Retrieve a detail view of IP address object from your NetBox instance based on given IP address ID.",
+      "description": "Retrieves a detailed view of IP address object from your NetBox instance based on the IP address ID that you have specified.",
       "category": "investigation",
       "annotation": "get_ip_address",
       "enabled": true,
@@ -335,15 +335,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this IP address in Netbox instance.",
-          "description": "Specify the unique integer value identifying this IP address in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this IP address object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this IP address object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_ip_address",
       "title": "Update IP Address",
-      "description": "Update a IP address object from your NetBox instance based on given IP address ID and other parameters.",
+      "description": "Updates an IP address object from your NetBox instance based on the IP address ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_ip_address",
       "enabled": true,
@@ -426,8 +426,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this IP address in Netbox instance.",
-          "description": "Specify the unique integer value identifying this IP address in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this IP address object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this IP address object in NetBox instance."
         },
         {
           "title": "Fields to be updated",
@@ -461,15 +461,15 @@
               "additionalProp3": ""
             }
           },
-          "tooltip": "Specify the fields and field values that you want to update in IP address object on Netbox instance.",
-          "description": "Specify the fields and field values that you want to update in IP address object on Netbox instance."
+          "tooltip": "Specify the fields and field values that to update in IP address object on NetBox instance.",
+          "description": "Specify the fields and field values that to update in IP address object on NetBox instance."
         }
       ]
     },
     {
       "operation": "delete_ip_address",
       "title": "Delete IP Address",
-      "description": "Delete an IP address object from your NetBox instance based on given IP address ID.",
+      "description": "Deletes an IP address object from your NetBox instance based on given IP address ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_ip_address",
       "enabled": true,
@@ -482,15 +482,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this IP address in Netbox instance.",
-          "description": "Specify the unique integer value identifying this IP address in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this IP address object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this IP address object in NetBox instance."
         }
       ]
     },
     {
       "operation": "get_prefix_list",
       "title": "Get Prefix List",
-      "description": "Get a list of IP address Prefix objects in your NetBox instance. A prefix might be represented as \"192.168.1.0/24.\" Here, \"192.168.1.0\" is the network address, and \"/24\" denotes the subnet mask ",
+      "description": "Retrieves a list of IP address prefix objects in your NetBox instance based on the IDs, prefix, and other input parameters that you have specified. A prefix might be represented as 192.168.1.0/24. Here, 192.168.1.0 is the network address, and /24 denotes the subnet mask.",
       "category": "investigation",
       "annotation": "get_prefix_list",
       "enabled": true,
@@ -581,8 +581,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify comma-separated values of prefix IDs to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of prefix IDs to retrieve from your NetBox instance."
         },
         {
           "title": "Prefix",
@@ -591,8 +591,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Prefix names you want to fetch.",
-          "description": "Specify comma separated values of Prefix names you want to fetch."
+          "tooltip": "Specify comma-separated values of prefix names to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of prefix names to retrieve from your NetBox instance."
         },
         {
           "title": "Sites",
@@ -601,8 +601,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Site Slug names whose Prefix you want to fetch.",
-          "description": "Specify comma separated values of Site Slug names whose Prefix you want to fetch."
+          "tooltip": "Specify comma-separated values of site slug names whose prefix to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of site slug names whose prefix to retrieve from your NetBox instance."
         },
         {
           "title": "Roles",
@@ -611,8 +611,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Role Slug names whose Prefix you want to fetch.",
-          "description": "Specify comma separated values of Role Slug names whose Prefix you want to fetch."
+          "tooltip": "Specify comma-separated values of role name associated with site slugs whose prefix to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of role name associated with site slugs whose prefix to retrieve from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -621,8 +621,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags names whose Prefix you want to fetch.",
-          "description": "Specify comma separated values of Tags names whose Prefix you want to fetch."
+          "tooltip": "Specify comma-separated values of tags names whose prefix to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of tags names whose prefix to retrieve from your NetBox instance."
         },
         {
           "title": "Search Query",
@@ -631,8 +631,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results.",
-          "description": "Specify the search query with which you want to filter the results."
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Address Family",
@@ -645,8 +645,8 @@
             "IPv4",
             "IPv6"
           ],
-          "tooltip": "Specify the family number with which you want to filter the results.",
-          "description": "Specify the family number with which you want to filter the results."
+          "tooltip": "Specify the address family identified, in accordance with RFC 2453, with which you want to filter the results",
+          "description": "Specify the address family identified, in accordance with RFC 2453, with which you want to filter the results"
         },
         {
           "title": "Status",
@@ -655,8 +655,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the prefix names to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the prefix names to retrieve from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -665,8 +665,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -675,8 +675,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -703,7 +703,7 @@
     {
       "operation": "get_prefix",
       "title": "Get Prefix",
-      "description": "Retrieve a detail view of Prefix object from your NetBox instance based on given Prefix ID.",
+      "description": "Retrieves a detailed view of the prefix object from your NetBox instance based on the prefix ID that you have specified.",
       "category": "investigation",
       "annotation": "get_prefix",
       "enabled": true,
@@ -787,15 +787,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Prefix object in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Prefix object in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this prefix object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this prefix object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_prefix",
       "title": "Update Prefix",
-      "description": "Update a Prefix object from your NetBox instance based on given Prefix ID and other parameters.",
+      "description": "Updates a prefix object from your NetBox instance based on the prefix ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_prefix",
       "enabled": true,
@@ -879,8 +879,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Prefix in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Prefix in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this prefix in NetBox instance.",
+          "description": "Specify the unique integer value identifying this prefix in NetBox instance."
         },
         {
           "title": "Fields to be updated",
@@ -914,15 +914,15 @@
               "additionalProp3": ""
             }
           },
-          "tooltip": "Specify the fields and field values that you want to update in Prefix object on Netbox instance.",
-          "description": "Specify the fields and field values that you want to update in Prefix object on Netbox instance."
+          "tooltip": "Specify the fields and field values that you want to update in prefix object on NetBox instance.",
+          "description": "Specify the fields and field values that you want to update in prefix object on NetBox instance."
         }
       ]
     },
     {
       "operation": "delete_prefix",
       "title": "Delete Prefix",
-      "description": "Delete a Prefix object from your NetBox instance based on given Prefix ID.",
+      "description": "Deletes a prefix object from your NetBox instance based on the prefix ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_prefix",
       "enabled": true,
@@ -935,15 +935,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Prefix in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Prefix in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this prefix in NetBox instance.",
+          "description": "Specify the unique integer value identifying this prefix in NetBox instance."
         }
       ]
     },
     {
       "operation": "get_vm_list",
       "title": "Get Virtual Machines List",
-      "description": "Get a list of all Virtual Machines associated with your NetBox instance.",
+      "description": "Retrieves a list of all virtual machines associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified.",
       "category": "investigation",
       "annotation": "get_vm_list",
       "enabled": true,
@@ -1058,8 +1058,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify comma-separated values of VM IDs to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of VM IDs to retrieve from your NetBox instance."
         },
         {
           "title": "Name",
@@ -1068,8 +1068,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Virtual Machines names which you want to fetch.",
-          "description": "Specify comma separated values of Virtual Machines names which you want to fetch."
+          "tooltip": "Specify comma-separated values of virtual machine names to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of virtual machine names to retrieve from your NetBox instance."
         },
         {
           "title": "Sites",
@@ -1078,8 +1078,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Site Slug names whose Virtual Machines you want to fetch.",
-          "description": "Specify comma separated values of Site Slug names whose Virtual Machines you want to fetch."
+          "tooltip": "Specify comma-separated values of site slug names whose virtual machines to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of site slug names whose virtual machines to retrieve from your NetBox instance."
         },
         {
           "title": "Roles",
@@ -1088,8 +1088,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Role Slug names whose Virtual Machines you want to fetch.",
-          "description": "Specify comma separated values of Role Slug names whose Virtual Machines you want to fetch."
+          "tooltip": "Specify comma-separated values of role slug names whose virtual machines to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of role slug names whose virtual machines to retrieve from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -1098,8 +1098,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags names whose Virtual Machines you want to fetch.",
-          "description": "Specify comma separated values of Tags names whose Virtual Machines you want to fetch."
+          "tooltip": "Specify comma-separated values of tags names whose Virtual Machines to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of tags names whose Virtual Machines to retrieve from your NetBox instance."
         },
         {
           "title": "Status",
@@ -1108,8 +1108,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the object to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the object to retrieve from your NetBox instance."
         },
         {
           "title": "Search Query",
@@ -1118,8 +1118,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results.",
-          "description": "Specify the search query with which you want to filter the results."
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -1128,8 +1128,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -1138,8 +1138,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -1166,7 +1166,7 @@
     {
       "operation": "get_vm",
       "title": "Get Virtual Machine",
-      "description": "Retrieve a detail view of Virtual Machine from your NetBox instance based on given VM ID.",
+      "description": "Retrieves a detailed view of the virtual machine from your NetBox instance based on the VM ID that you have specified.",
       "category": "investigation",
       "annotation": "get_vm",
       "enabled": true,
@@ -1274,15 +1274,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this VM object in Netbox instance.",
-          "description": "Specify the unique integer value identifying this VM object in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this VM object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this VM object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_vm",
       "title": "Update Virtual Machine",
-      "description": "Update a VM object from your NetBox instance based on given VM ID and other parameters.",
+      "description": "Updates a VM object from your NetBox instance based on given VM ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_vm",
       "enabled": true,
@@ -1366,8 +1366,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this VM in Netbox instance.",
-          "description": "Specify the unique integer value identifying this VM in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this VM object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this VM object in NetBox instance."
         },
         {
           "title": "Fields to be updated",
@@ -1406,15 +1406,15 @@
               "additionalProp3": ""
             }
           },
-          "tooltip": "Specify the fields and field values that you want to update in VM object on Netbox instance.",
-          "description": "Specify the fields and field values that you want to update in VM object on Netbox instance."
+          "tooltip": "Specify the fields and field values to update in VM object on NetBox instance.",
+          "description": "Specify the fields and field values to update in VM object on NetBox instance."
         }
       ]
     },
     {
       "operation": "delete_vm",
       "title": "Delete Virtual Machine",
-      "description": "Delete a VM object from your NetBox instance based on given VM ID.",
+      "description": "Deletes a VM object from your NetBox instance based on the VM ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_vm",
       "enabled": true,
@@ -1427,15 +1427,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this VM in Netbox instance.",
-          "description": "Specify the unique integer value identifying this VM in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this VM object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this VM object in NetBox instance."
         }
       ]
     },
     {
       "operation": "get_rack_list",
       "title": "Get Rack List",
-      "description": "Get a list of all Racks associated with your NetBox instance. A Rack refers to a physical or virtual representation of a rack-mounted equipment",
+      "description": "Retrieves a list of all racks associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified. A Rack refers to a physical or virtual representation of a rack-mounted equipment.",
       "category": "investigation",
       "annotation": "get_rack_list",
       "enabled": true,
@@ -1541,8 +1541,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify comma-separated values of rack IDs to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of rack IDs to retrieve from your NetBox instance."
         },
         {
           "title": "Name",
@@ -1551,8 +1551,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Rack names which you want to fetch.",
-          "description": "Specify comma separated values of Rack names which you want to fetch."
+          "tooltip": "Specify comma-separated values of rack names to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of rack names to retrieve from your NetBox instance."
         },
         {
           "title": "Sites",
@@ -1561,8 +1561,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Site Slug names whose Rack you want to fetch.",
-          "description": "Specify comma separated values of Site Slug names whose Rack you want to fetch."
+          "tooltip": "Specify comma-separated values of site slug names to retrieve its associated rack from your NetBox instance.",
+          "description": "Specify comma-separated values of site slug names to retrieve its associated rack from your NetBox instance."
         },
         {
           "title": "Roles",
@@ -1571,8 +1571,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Role Slug names whose Rack you want to fetch.",
-          "description": "Specify comma separated values of Role Slug names whose Rack you want to fetch."
+          "tooltip": "Specify comma-separated values of role slug names to retrieve its associated rack from your NetBox instance.",
+          "description": "Specify comma-separated values of role slug names to retrieve its associated rack from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -1581,8 +1581,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags names whose Rack you want to fetch.",
-          "description": "Specify comma separated values of Tags names whose Rack you want to fetch."
+          "tooltip": "Specify comma-separated values of tag names to retrieve its associated rack from your NetBox instance.",
+          "description": "Specify comma-separated values of tag names to retrieve its associated rack from your NetBox instance."
         },
         {
           "title": "Type",
@@ -1591,8 +1591,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Type of Rack (Slug Names) which you want to fetch.",
-          "description": "Specify comma separated values of Type of Rack (Slug Names) which you want to fetch."
+          "tooltip": "Specify comma-separated values of rack type (slug names) to retrieve its associated rack from your NetBox instance.",
+          "description": "Specify comma-separated values of rack type (slug names) to retrieve its associated rack from your NetBox instance."
         },
         {
           "title": "Search Query",
@@ -1601,8 +1601,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results.",
-          "description": "Specify the search query with which you want to filter the results."
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Status",
@@ -1611,8 +1611,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the rack address object to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the rack address object to retrieve from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -1621,8 +1621,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -1631,8 +1631,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -1659,7 +1659,7 @@
     {
       "operation": "get_rack",
       "title": "Get Rack",
-      "description": "Retrieve a detail view of Rack object from your NetBox instance based on given Rack ID.",
+      "description": "Retrieves a detailed view of a rack object from your NetBox instance based on the rack ID that you have specified.",
       "category": "investigation",
       "annotation": "get_rack",
       "enabled": true,
@@ -1758,15 +1758,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Rack object in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Rack object in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this rack object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this rack object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_rack",
       "title": "Update Rack",
-      "description": "Update a Rack object from your NetBox instance based on given Rack ID and other parameters.",
+      "description": "Updates a rack object from your NetBox instance based on the rack ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_rack",
       "enabled": true,
@@ -1865,8 +1865,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Rack in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Rack in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this rack object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this rack object in NetBox instance."
         },
         {
           "title": "Fields to be updated",
@@ -1912,15 +1912,15 @@
               "additionalProp3": ""
             }
           },
-          "tooltip": "Specify the fields and field values that you want to update in VM object on Netbox instance.",
-          "description": "Specify the fields and field values that you want to update in VM object on Netbox instance."
+          "tooltip": "Specify the fields and field values to update in the rack object on NetBox instance.",
+          "description": "Specify the fields and field values to update in the rack object on NetBox instance."
         }
       ]
     },
     {
       "operation": "delete_rack",
       "title": "Delete Rack",
-      "description": "Delete a Rack object from your NetBox instance based on given Rack ID.",
+      "description": "Deletes a rack object from your NetBox instance based on the rack ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_rack",
       "enabled": true,
@@ -1933,15 +1933,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Rack in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Rack in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this rack object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this rack object in NetBox instance."
         }
       ]
     },
     {
       "operation": "get_device_list",
       "title": "Get Devices List",
-      "description": "Get a list of all Devices associated with your NetBox instance. A Device refers to the various pieces of equipment or hardware that make up a network or data center infrastructure.",
+      "description": "Retrieves a list of all Devices associated with your NetBox instance based on the IDs, names, and other input parameters that you have specified. A Device refers to the various pieces of equipment or hardware that make up a network or data center infrastructure.",
       "category": "investigation",
       "annotation": "get_device_list",
       "enabled": true,
@@ -2137,8 +2137,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify comma-separated values of device IDs to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of device IDs to retrieve from your NetBox instance."
         },
         {
           "title": "Name",
@@ -2147,8 +2147,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Device names which you want to fetch.",
-          "description": "Specify comma separated values of Device names which you want to fetch."
+          "tooltip": "Specify comma-separated values of device names to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of device names to retrieve from your NetBox instance."
         },
         {
           "title": "Region IDs",
@@ -2157,8 +2157,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Region IDs whose Devices you want to fetch.",
-          "description": "Specify comma separated values of Region IDs whose Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of region IDs whose associated devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of region IDs whose associated devices to retrieve from your NetBox instance."
         },
         {
           "title": "Sites",
@@ -2167,8 +2167,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Site Slug names whose Devices you want to fetch.",
-          "description": "Specify comma separated values of Site Slug names whose Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of site slug names whose Devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of site slug names whose Devices to retrieve from your NetBox instance."
         },
         {
           "title": "Rack IDs",
@@ -2177,8 +2177,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Rack IDs whose Devices you want to fetch.",
-          "description": "Specify comma separated values of Rack IDs whose Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of rack IDs whose Devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of rack IDs whose Devices to retrieve from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -2187,8 +2187,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags names whose Devices you want to fetch.",
-          "description": "Specify comma separated values of Tags names whose Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of tag names whose Devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of tag names whose Devices to retrieve from your NetBox instance."
         },
         {
           "title": "Device Type",
@@ -2197,8 +2197,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Type of Devices (Slug names) which you want to fetch.",
-          "description": "Specify comma separated values of Type of Devices (Slug names) which you want to fetch."
+          "tooltip": "Specify comma-separated values of device types (slug names) to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of device types (slug names) to retrieve from your NetBox instance."
         },
         {
           "title": "Asset Tags",
@@ -2207,8 +2207,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Asset Tags which is attached to Devices you want to fetch.",
-          "description": "Specify comma separated values of Asset Tags which is attached to Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of asset tags associated with devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of asset tags associated with devices to retrieve from your NetBox instance."
         },
         {
           "title": "Tenants",
@@ -2217,8 +2217,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tenant Slug names whose Devices you want to fetch.",
-          "description": "Specify comma separated values of Tenant Slug names whose Devices you want to fetch."
+          "tooltip": "Specify comma-separated values of tenant slug names whose associated devices to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of tenant slug names whose associated devices to retrieve from your NetBox instance."
         },
         {
           "title": "Search Query",
@@ -2227,8 +2227,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results.",
-          "description": "Specify the search query with which you want to filter the results."
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Status",
@@ -2237,8 +2237,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the devices to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the devices to retrieve from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -2247,8 +2247,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -2257,8 +2257,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -2285,7 +2285,7 @@
     {
       "operation": "get_device",
       "title": "Get Device",
-      "description": "Retrieve a detail view of Device object from your NetBox instance based on given Device ID.",
+      "description": "Retrieves a detail view of device object from your NetBox instance based on the device ID that you have specified.",
       "category": "investigation",
       "annotation": "get_device",
       "enabled": true,
@@ -2474,15 +2474,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Device object in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Device object in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this device object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this device object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_device",
       "title": "Update Device",
-      "description": "Update a Device object from your NetBox instance based on given Device ID and other parameters.",
+      "description": "Updates a device object from your NetBox instance based on given device ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_device",
       "enabled": true,
@@ -2681,8 +2681,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify Type ID which you want to update.",
-          "description": "Specify Type ID which you want to update."
+          "tooltip": "Specify Type ID of the device to update in your NetBox instance.",
+          "description": "Specify Type ID of the device to update in your NetBox instance."
         },
         {
           "title": "Name",
@@ -2691,8 +2691,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the Device names which you want to update.",
-          "description": "Specify the Device names which you want to update."
+          "tooltip": "Specify the device names to update in your NetBox instance.",
+          "description": "Specify the device names to update in your NetBox instance."
         },
         {
           "title": "Description",
@@ -2701,8 +2701,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the Description of the Device you want to update.",
-          "description": "Specify the Description of the Device you want to update."
+          "tooltip": "Specify the description of the device to update in your NetBox instance.",
+          "description": "Specify the description of the device to update in your NetBox instance."
         },
         {
           "title": "Status",
@@ -2711,8 +2711,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to update.",
-          "description": "Specify the operational status of the object you want to update."
+          "tooltip": "Specify the operational status of the object to update in your NetBox instance.",
+          "description": "Specify the operational status of the object to update in your NetBox instance."
         },
         {
           "title": "Site ID",
@@ -2721,8 +2721,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the ID of Site which you want to update in Device.",
-          "description": "Specify the ID of Site which you want to update in Device."
+          "tooltip": "Specify the site ID to update in the device object in your NetBox instance.",
+          "description": "Specify the site ID to update in the device object in your NetBox instance."
         },
         {
           "title": "Comments",
@@ -2731,8 +2731,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the Comment which you want to update in Device object.",
-          "description": "Specify the Comment which you want to update in Device object."
+          "tooltip": "Specify the comment to update in the device object in your NetBox instance.",
+          "description": "Specify the comment to update in the device object in your NetBox instance."
         },
         {
           "title": "Rack ID",
@@ -2741,8 +2741,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the Rack ID which you want to update in Device object.",
-          "description": "Specify the Rack ID which you want to update in Device object."
+          "tooltip": "Specify the Rack ID to update in the device object in your NetBox instance.",
+          "description": "Specify the Rack ID to update in the device object in your NetBox instance."
         },
         {
           "title": "Tags",
@@ -2758,13 +2758,13 @@
               "color": "0030aa"
             }
           ],
-          "tooltip": "Specify values of Tags in json format whose Devices you want to update.",
-          "description": "Specify values of Tags in json format whose Devices you want to update."
+          "tooltip": "Specify values of tags, in json format, to update in the device object in your NetBox instance.",
+          "description": "Specify values of tags, in json format, to update in the device object in your NetBox instance."
         },
         {
           "title": "Other Fields",
-          "tooltip": "Specify fields in the JSON format key-value pair which is to be updated in Device object",
-          "description": "Specify fields in the JSON format key-value pair which is to be updated in Device object",
+          "tooltip": "Specify fields in the JSON format key-value pair to update in the device object in your NetBox instance.",
+          "description": "Specify fields in the JSON format key-value pair to update in the device object in your NetBox instance.",
           "required": false,
           "editable": true,
           "visible": true,
@@ -2776,7 +2776,7 @@
     {
       "operation": "delete_device",
       "title": "Delete Device",
-      "description": "Delete a Device object from your NetBox instance based on given Device ID.",
+      "description": "Deletes a device object from your NetBox instance based on given device ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_device",
       "enabled": true,
@@ -2789,15 +2789,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Device in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Device in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this Device in NetBox instance.",
+          "description": "Specify the unique integer value identifying this Device in NetBox instance."
         }
       ]
     },
     {
       "operation": "get_cable_list",
       "title": "Get Cables List",
-      "description": "Get a list of all Cables associated with your NetBox instance. Cables represent the links between different devices or interfaces within a network infrastructure and are used to denote how devices are interconnected.",
+      "description": "Retrieves a list of all cables associated with your NetBox instance IDs, names, and other input parameters that you have specified. Cables represent the links between different devices or interfaces within a network infrastructure and are used to denote how devices are interconnected.",
       "category": "investigation",
       "annotation": "get_cable_list",
       "enabled": true,
@@ -2873,8 +2873,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of IDs which you want to fetch.",
-          "description": "Specify comma separated values of IDs which you want to fetch."
+          "tooltip": "Specify comma-separated values of cable IDs to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of cable IDs to retrieve from your NetBox instance."
         },
         {
           "title": "Tags",
@@ -2883,8 +2883,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Tags Slug names whose Cables you want to fetch.",
-          "description": "Specify comma separated values of Tags Slug names whose Cables you want to fetch."
+          "tooltip": "Specify comma-separated values of tag slug names whose cable objects to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of tag slug names whose cable objects to retrieve from your NetBox instance."
         },
         {
           "title": "Type",
@@ -2893,8 +2893,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify comma separated values of Type of Cables which you want to fetch.",
-          "description": "Specify comma separated values of Type of Cables which you want to fetch."
+          "tooltip": "Specify comma-separated values of cable types to retrieve from your NetBox instance.",
+          "description": "Specify comma-separated values of cable types to retrieve from your NetBox instance."
         },
         {
           "title": "Search Query",
@@ -2903,8 +2903,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the search query with which you want to filter the results. Ex:- label name of Cable",
-          "description": "Specify the search query with which you want to filter the results. Ex:- label name of Cable"
+          "tooltip": "Specify the search query to filter the results retrieved from your NetBox instance.",
+          "description": "Specify the search query to filter the results retrieved from your NetBox instance."
         },
         {
           "title": "Status",
@@ -2913,8 +2913,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the operational status of the object you want to fetch.",
-          "description": "Specify the operational status of the object you want to fetch."
+          "tooltip": "Specify the operational status of the cable address object to retrieve from your NetBox instance.",
+          "description": "Specify the operational status of the cable address object to retrieve from your NetBox instance."
         },
         {
           "title": "Order by Field",
@@ -2923,8 +2923,8 @@
           "required": false,
           "editable": true,
           "type": "text",
-          "tooltip": "Specify the field to use when ordering the results.",
-          "description": "Specify the field to use when ordering the results."
+          "tooltip": "Specify the field to use when ordering the results retrieved from your NetBox instance.",
+          "description": "Specify the field to use when ordering the results retrieved from your NetBox instance."
         },
         {
           "title": "Offset",
@@ -2933,8 +2933,8 @@
           "required": false,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the initial index from which to return the results.",
-          "description": "Specify the initial index from which to return the results."
+          "tooltip": "Specify the number of records to skip when returning the results retrieved from your NetBox instance.",
+          "description": "Specify the number of records to skip when returning the results retrieved from your NetBox instance."
         },
         {
           "title": "Limit",
@@ -2961,7 +2961,7 @@
     {
       "operation": "get_cable",
       "title": "Get Cable",
-      "description": "Retrieve a detail view of Cable object from your NetBox instance based on given Cable ID.",
+      "description": "Retrieves a detail view of cable object from your NetBox instance based on given cable ID that you have specified.",
       "category": "investigation",
       "annotation": "get_cable",
       "enabled": true,
@@ -3030,15 +3030,15 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Cable object in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Cable object in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this cable object in NetBox instance.",
+          "description": "Specify the unique integer value identifying this cable object in NetBox instance."
         }
       ]
     },
     {
       "operation": "update_cable",
       "title": "Update Cable",
-      "description": "Update a Cable object from your NetBox instance based on given Cable ID and other parameters.",
+      "description": "Updates a cable object from your NetBox instance based on given cable ID and fields to be updated.",
       "category": "investigation",
       "annotation": "update_cable",
       "enabled": true,
@@ -3107,8 +3107,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Cable in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Cable in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this cable object in your NetBox instance.",
+          "description": "Specify the unique integer value identifying this cable object in your NetBox instance."
         },
         {
           "title": "Fields to be updated",
@@ -3152,15 +3152,15 @@
               "additionalProp3": ""
             }
           },
-          "tooltip": "Specify the fields and field values that you want to update in Cable object on Netbox instance.",
-          "description": "Specify the fields and field values that you want to update in Cable object on Netbox instance."
+          "tooltip": "Specify the fields and field values to update in the cable object in your NetBox instance.",
+          "description": "Specify the fields and field values to update in the cable object in your NetBox instance."
         }
       ]
     },
     {
       "operation": "delete_cable",
       "title": "Delete Cable",
-      "description": "Delete a Cable object from your NetBox instance based on given Cable ID.",
+      "description": "Deletes a cable object from your NetBox instance based on given cable ID that you have specified.",
       "category": "investigation",
       "annotation": "delete_cable",
       "enabled": true,
@@ -3173,8 +3173,8 @@
           "required": true,
           "editable": true,
           "type": "integer",
-          "tooltip": "Specify the unique integer value identifying this Cable in Netbox instance.",
-          "description": "Specify the unique integer value identifying this Cable in Netbox instance."
+          "tooltip": "Specify the unique integer value identifying this Cable in NetBox instance.",
+          "description": "Specify the unique integer value identifying this Cable in NetBox instance."
         }
       ]
     }
